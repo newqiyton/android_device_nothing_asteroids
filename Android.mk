@@ -7,6 +7,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),Asteroids)
+ifeq ($(TARGET_DEVICE),asteroids)
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 endif
