@@ -67,5 +67,3 @@ PRODUCT_PACKAGES += \
     libresetprop \
     resetprop
 
-PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/init.recovery.usb.rc:recovery/root/init.recovery.usb.rc
