@@ -165,10 +165,6 @@ BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 # Fix API Level Mismatch
 BOARD_SYSTEMSDK_VERSIONS := 32
 
-# USB Configuration
-TARGET_USE_CUSTOM_LUN_FILE_PATH := /config/usb_gadget/g1/functions/mass_storage.0/lun.0/file
-TW_EXCLUDE_DEFAULT_USB_INIT := true
-
 # Twrp theme
 TARGET_SCREEN_WIDTH := 1080
 TARGET_SCREEN_HEIGHT := 2392
@@ -176,6 +172,3 @@ TW_THEME := portrait_hdpi
 TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel0-backlight/brightness"
 TW_MAX_BRIGHTNESS := 1300
 
-# Manifest
-DEVICE_MANIFEST_FILE := device/nothing/asteroids/manifest.xml
-DEVICE_MATRIX_FILE := device/nothing/asteroids/compatibility_matrix.xml
