@@ -166,7 +166,7 @@ BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 BOARD_SYSTEMSDK_VERSIONS := 32
 
 # USB Configuration
-TARGET_USE_CUSTOM_LUN_FILE_PATH := /config/usb_gadget/g1/functions/mass_storage.0/lun.0/file
+TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/path/to/lun%d"
 TW_EXCLUDE_DEFAULT_USB_INIT := true
 
 # Twrp theme
