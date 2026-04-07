@@ -10,4 +10,4 @@ PRODUCT_MAKEFILES := \
 
 COMMON_LUNCH_CHOICES := \
     twrp_asteroids-ap2a-eng \
-    twrp_asteroids-userdebug
+    twrp_asteroids--ap2a-userdebug
