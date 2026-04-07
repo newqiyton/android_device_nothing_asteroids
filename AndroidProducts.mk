@@ -9,5 +9,5 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/twrp_asteroids.mk
 
 COMMON_LUNCH_CHOICES := \
-    twrp_asteroids-eng \
+    twrp_asteroids-ap2a-eng \
     twrp_asteroids-userdebug
