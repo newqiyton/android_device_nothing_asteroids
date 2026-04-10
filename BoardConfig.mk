@@ -7,9 +7,9 @@
 
 DEVICE_PATH := device/nothing/asteroids
 
-# Force API levels to match TWRP source (API 32)
-override BOARD_SHIPPING_API_LEVEL := 32
-override BOARD_SYSTEMSDK_VERSIONS := 32
+# Force API levels to match TWRP source (API 34)
+override BOARD_SHIPPING_API_LEVEL := 34
+override BOARD_SYSTEMSDK_VERSIONS := 34
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
@@ -163,13 +163,13 @@ PLATFORM_VERSION := 16.1.0
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
 # Fix API Level Mismatch
-BOARD_SYSTEMSDK_VERSIONS := 32
+BOARD_SYSTEMSDK_VERSIONS := 34
 
 # USB Configuration
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/path/to/lun%d"
 TW_EXCLUDE_DEFAULT_USB_INIT := true
 
-# Twrp theme
+# TWRP theme
 TARGET_SCREEN_WIDTH := 1080
 TARGET_SCREEN_HEIGHT := 2392
 TW_THEME := portrait_hdpi
@@ -179,3 +179,17 @@ TW_MAX_BRIGHTNESS := 1300
 # Manifest
 DEVICE_MANIFEST_FILE := device/nothing/asteroids/manifest.xml
 DEVICE_MATRIX_FILE := device/nothing/asteroids/compatibility_matrix.xml
+
+# TWRP specific Build flags
+TW_STATUS_ICONS_ALIGN := center
+TW_CUSTOM_CPU_POS := "50"
+TW_CUSTOM_CLOCK_POS := "600"
+TW_CUSTOM_BATTERY_POS := "800"
+TW_DEFAULT_BRIGHTNESS := 420
+TW_QCOM_ATS_OFFSET := 1666528204500
+TW_INCLUDE_CRYPTO := true
+TW_NO_EXFAT_FUSE := true
+TW_INCLUDE_NTFS_3G := true
+TW_INCLUDE_RESETPROP := true
+TW_USE_SERIALNO_PROPERTY_FOR_DEVICE_ID := true
+TW_DEVICE_VERSION := Asteroids
