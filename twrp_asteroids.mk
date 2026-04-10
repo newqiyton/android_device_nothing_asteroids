@@ -5,9 +5,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-#Whoever reads that, should know that i want to shit
-PRODUCT_SHIPPING_API_LEVEL := 32
-override PRODUCT_SHIPPING_API_LEVEL := 32
+# Match TWRP 14.1 manifest
+PRODUCT_SHIPPING_API_LEVEL := 34
+override PRODUCT_SHIPPING_API_LEVEL := 34
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
